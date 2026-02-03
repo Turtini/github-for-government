@@ -4,6 +4,13 @@ Plain-language guidance for using GitHub in government and regulated environment
 
 This repository explains **what GitHub is, how it is commonly used, and how government teams can engage with it safely and confidently** — without requiring software development experience.
 
+## Related Resources
+
+- **Public Sector Security & FedRAMP Guidance**  
+  https://github.com/turtini/public-sector-security
+
+  Plain-language explanations of FedRAMP, authorization boundaries, and shared responsibility models commonly encountered in federal environments.
+
 ---
 
 ## Who this is for
