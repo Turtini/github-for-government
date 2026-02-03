@@ -11,6 +11,7 @@ The responses are intentionally conservative and factual.
 Short answer: No.
 
 Explanation:
+
 GitHub is a collaboration and documentation platform. It does not execute workloads, process transactions, or operate live systems. It is typically used to manage artifacts about systems, not the systems themselves.
 
 ---
