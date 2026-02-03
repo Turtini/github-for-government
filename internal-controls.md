@@ -1,4 +1,4 @@
-#How GitHub Supports Internal Controls (Illustrative)
+# How GitHub Supports Internal Controls (Illustrative)
 
 This section describes how GitHub can support common internal control objectives when configured and used intentionally.
 
