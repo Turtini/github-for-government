@@ -1,4 +1,4 @@
-##Common Github Terms
+# GitHub Terms
 
 You may encounter the following terms while using GitHub. These explanations are intentionally non-technical.
 
