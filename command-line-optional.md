@@ -48,7 +48,7 @@ The **control model remains the same** as browser-based participation.
 
 ---
 
-## High-level CLI workflow (illustrative)
+## High-level CLI workflow
 
 A typical command-line interaction may involve:
 
