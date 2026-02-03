@@ -1,0 +1,182 @@
+# Compliance GitHub Terms
+
+This section explains GitHub concepts using audit, governance, and compliance language rather than software development terminology.
+
+The intent is to clarify how GitHub supports traceability, oversight, and control when used appropriately.
+
+Audit Trail
+
+An audit trail is the complete, immutable record of activity over time.
+
+In GitHub, this includes:
+
+Who made a change
+
+What was changed
+
+When the change occurred
+
+The full history of previous versions
+
+Associated discussion or rationale (when provided)
+
+Records are preserved by default and cannot be silently altered or removed.
+
+Version History
+
+Version history provides access to prior states of a document or artifact.
+
+This enables:
+
+Reconstruction of past decisions
+
+Review of how content evolved
+
+Comparison between versions
+
+Recovery from unintended changes
+
+Nothing is overwritten without record.
+
+Change Control
+
+GitHub supports explicit change control through review mechanisms.
+
+Common controls include:
+
+Restricted write access
+
+Required review or approval
+
+Documented discussion before acceptance
+
+Separation between proposal and approval
+
+Changes do not take effect without intentional action.
+
+Separation of Duties
+
+GitHub can enforce separation of duties by role.
+
+For example:
+
+One person proposes a change
+
+Another reviews the change
+
+A third approves or merges the change
+
+This model aligns with common internal control frameworks.
+
+Approval Gates
+
+Approval gates ensure that:
+
+Changes are visible before acceptance
+
+Review occurs prior to modification
+
+Decisions are logged and attributable
+
+In GitHub, approval gates are explicit and configurable.
+
+Transparency
+
+Transparency refers to the ability to observe:
+
+Current state
+
+Historical state
+
+Decision context
+
+Review activity
+
+Transparency does not imply lack of control.
+It enables oversight without requiring direct participation.
+
+Immutability (Practical)
+
+While content can evolve, history is preserved.
+
+Past versions remain accessible
+
+Attribution remains intact
+
+Deleted content leaves traces
+
+This supports post-hoc review and inquiry.
+
+Access Control
+
+Access to repositories and actions is role-based.
+
+Typical controls include:
+
+Read-only access
+
+Comment-only access
+
+Proposal rights
+
+Approval rights
+
+Access is granted explicitly and can be revoked.
+
+Evidence Collection
+
+GitHub repositories can be used as evidence sources for:
+
+Decision records
+
+Policy evolution
+
+Technical standards
+
+Governance documentation
+
+Review and approval history
+
+Artifacts can be referenced by link, timestamp, and version.
+
+What GitHub does not replace
+
+GitHub does not replace:
+
+Formal records systems
+
+Required policy approvals
+
+Regulatory obligations
+
+Agency-specific compliance tooling
+
+It complements existing systems by providing traceable working history.
+
+Risk Considerations
+
+When used appropriately:
+
+Reading content is non-destructive
+
+Proposing changes does not modify authoritative records
+
+Review gates prevent unilateral action
+
+History supports accountability
+
+Risk arises primarily from misconfiguration, not from the platform itself.
+
+Summary for Audit & Compliance
+
+When intentionally configured, GitHub functions as:
+
+A controlled collaboration environment
+
+A transparent change-tracking system
+
+A source of traceable evidence
+
+A mechanism for documented review and approval
+
+Understanding these properties allows teams to evaluate GitHub based on controls and outcomes, not assumptions.
