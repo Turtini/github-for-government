@@ -1,9 +1,9 @@
 {% extends "!layout.html" %}
 
-{# --- Top global header (full-width, always visible) --- #}
-{% block extrabody %}
-  {{ super() }}
-
+{# =========================================================
+   Global Top Header (Ansible-like) — inject at top of body
+   ========================================================= #}
+{% block body %}
   <div class="turtini-global-header">
     <div class="turtini-header-inner">
       <div class="turtini-header-left">
@@ -16,18 +16,24 @@
       </div>
     </div>
   </div>
-{% endblock %}
-
-{# --- Banner inside the content area (under breadcrumbs) --- #}
-{% block content %}
-  <div class="turtini-banner" role="note" aria-label="Documentation notice">
-    <strong>Notice:</strong> This is Turtini’s official plain-language documentation for federal and regulated environments.
-  </div>
 
   {{ super() }}
 {% endblock %}
 
-{# --- Footer --- #}
+{# =========================================================
+   Banner under breadcrumbs — safest placement in RTD theme
+   ========================================================= #}
+{% block breadcrumbs %}
+  {{ super() }}
+
+  <div class="turtini-banner" role="note" aria-label="Documentation notice">
+    <strong>Notice:</strong> This is Turtini’s official plain-language documentation for federal and regulated environments.
+  </div>
+{% endblock %}
+
+{# =========================================================
+   Footer
+   ========================================================= #}
 {% block footer %}
   {{ super() }}
 
