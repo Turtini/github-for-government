@@ -38,3 +38,6 @@ html_theme_options = {
     "collapse_navigation": False,
     "navigation_depth": 4,
 }
+
+# Show last updated date
+html_last_updated_fmt = "%B %d, %Y"
