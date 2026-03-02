@@ -215,3 +215,73 @@ h1, h2, h3, h4, h5, h6 {
 .turtini-footer .last-updated {
   color: #6b7280;
 }
+
+/* =========================
+   Global Top Header
+   ========================= */
+
+.turtini-global-header {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.turtini-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.turtini-global-header a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.turtini-global-header a:hover {
+  text-decoration: underline;
+}
+
+.turtini-header-left a {
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* =========================
+   Banner
+   ========================= */
+
+.turtini-banner {
+  margin: 14px 0 20px 0;
+  padding: 14px 16px;
+  border: 1px solid #dbe3f5;
+  border-left: 6px solid #99d8e9;
+  background: #f7fbff;
+  color: #1f2937;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+.turtini-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 18px 24px;
+  border-top: 1px solid #dbe3f5;
+  font-size: 0.85rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.turtini-footer .last-updated {
+  color: #6b7280;
+}
