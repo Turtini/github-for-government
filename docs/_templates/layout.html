@@ -1,39 +1,36 @@
 {% extends "!layout.html" %}
 
-{# =========================================================
-   Global Top Header (Ansible-like) — inject at top of body
-   ========================================================= #}
-{% block body %}
-  <div class="turtini-global-header">
-    <div class="turtini-header-inner">
-      <div class="turtini-header-left">
-        <a href="https://turtini.com/" target="_blank" rel="noopener">Turtini</a>
-      </div>
+{# ============================
+   Top global header (full-width, sticky)
+   ============================ #}
+{% block extrabody %}
+  {{ super() }}
 
+  <div class="turtini-global-header" role="navigation" aria-label="Turtini global navigation">
+    <div class="turtini-header-inner">
       <div class="turtini-header-right">
+        <a href="https://turtini.com/" target="_blank" rel="noopener">Turtini</a>
         <a href="https://turtini.com/events" target="_blank" rel="noopener">Events</a>
         <a href="https://trident.turtini.com/login" target="_blank" rel="noopener">Trident</a>
       </div>
     </div>
   </div>
-
-  {{ super() }}
 {% endblock %}
 
-{# =========================================================
-   Banner under breadcrumbs — safest placement in RTD theme
-   ========================================================= #}
-{% block breadcrumbs %}
-  {{ super() }}
-
+{# ============================
+   Banner inside the content area (under breadcrumbs)
+   ============================ #}
+{% block content %}
   <div class="turtini-banner" role="note" aria-label="Documentation notice">
     <strong>Notice:</strong> This is Turtini’s official plain-language documentation for federal and regulated environments.
   </div>
+
+  {{ super() }}
 {% endblock %}
 
-{# =========================================================
+{# ============================
    Footer
-   ========================================================= #}
+   ============================ #}
 {% block footer %}
   {{ super() }}
 
