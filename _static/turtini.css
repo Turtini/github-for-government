@@ -232,3 +232,51 @@ h3, h4, h5, h6 {
   margin-top: 28px;
   padding-top: 18px;
 }
+
+/* =========================
+   Global Top Header (sticky + brand)
+   ========================= */
+
+.turtini-global-header{
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background: #2a53cd;           /* Turtini blue */
+  color: #fff;
+  width: 100%;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+}
+
+/* Keep header content aligned with your doc width */
+.turtini-header-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 18px;
+  display: flex;
+  justify-content: flex-end;     /* push everything to the right */
+  align-items: center;
+  gap: 20px;                     /* spacing between links */
+}
+
+/* Hide the "left" slot so Turtini sits with Events/Trident */
+.turtini-header-left{
+  display: none;
+}
+
+.turtini-header-right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.turtini-global-header a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.turtini-global-header a:hover{
+  color: #99d8e9;
+  text-decoration: underline;
+}
