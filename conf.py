@@ -43,3 +43,4 @@ html_theme_options = {
 html_last_updated_fmt = "%B %d, %Y"
 
 templates_path = ["_templates"]
+html_last_updated_fmt = "%B %d, %Y"
