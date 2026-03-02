@@ -9,7 +9,7 @@ source_suffix = {
     ".md": "markdown",
 }
 
-root_doc = "README"
+root_doc = "index"
 
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
