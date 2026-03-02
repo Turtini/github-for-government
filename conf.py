@@ -21,3 +21,20 @@ myst_enable_extensions = [
     "tasklist",
     "attrs_inline",
 ]
+
+html_logo = "_static/turtini-logo.png"  # or .svg
+html_static_path = ["_static"]
+
+html_css_files = [
+    "turtini.css",
+]
+
+html_js_files = [
+    "turtini-banner.js",
+]
+
+html_theme_options = {
+    # Collapses left nav nicely
+    "collapse_navigation": False,
+    "navigation_depth": 4,
+}
