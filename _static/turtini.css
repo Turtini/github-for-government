@@ -131,3 +131,25 @@ h3, h4, h5, h6 {
 .wy-side-nav-search {
   background-image: none !important;
 }
+
+/* === Global Font Override === */
+
+html, body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+  font-weight: 600;
+}
+
+/* Sidebar */
+.wy-nav-side {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+}
+
+/* Breadcrumbs */
+.wy-breadcrumbs {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+}
