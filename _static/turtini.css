@@ -116,3 +116,18 @@ h3, h4, h5, h6 {
   padding-bottom: 6px;
   margin-bottom: 18px;
 }
+
+/* Top mobile nav bar */
+.wy-nav-top {
+  background: #2a53cd !important;
+}
+
+/* Logo + search header area */
+.wy-side-nav-search {
+  background: #2a53cd !important;
+}
+
+/* Remove subtle gradient overlay */
+.wy-side-nav-search {
+  background-image: none !important;
+}
