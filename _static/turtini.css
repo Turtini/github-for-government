@@ -92,3 +92,27 @@ h2 {
 h3, h4, h5, h6 {
   color: #1f3ea8; /* slightly darker for hierarchy */
 }
+
+/* --- Breadcrumbs --- */
+
+.wy-breadcrumbs {
+  font-size: 13px;
+}
+
+.wy-breadcrumbs a {
+  color: #2a53cd;
+}
+
+.wy-breadcrumbs a:hover {
+  color: #99d8e9;
+}
+
+.wy-breadcrumbs li {
+  color: #555;
+}
+
+.wy-breadcrumbs {
+  border-bottom: 1px solid rgba(42,83,205,0.15);
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+}
