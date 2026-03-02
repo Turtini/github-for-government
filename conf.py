@@ -44,3 +44,9 @@ html_last_updated_fmt = "%B %d, %Y"
 
 templates_path = ["docs/_templates"]
 html_last_updated_fmt = "%B %d, %Y"
+
+from datetime import datetime
+
+html_context = {
+    "turtini_year": datetime.utcnow().year,
+}
