@@ -1,5 +1,7 @@
 # conf.py (repo root)
 
+from datetime import datetime
+
 project = "GitHub for Government"
 author = "Turtini"
 
@@ -22,8 +24,10 @@ myst_enable_extensions = [
     "attrs_inline",
 ]
 
-html_logo = "_static/turtini-logo.png"  # or .svg
+# Static assets
 html_static_path = ["_static"]
+html_logo = "_static/turtini-logo.png"  # or .svg
+html_favicon = "_static/favicon.ico"
 
 html_css_files = [
     "turtini.css",
@@ -34,7 +38,6 @@ html_js_files = [
 ]
 
 html_theme_options = {
-    # Collapses left nav nicely
     "collapse_navigation": False,
     "navigation_depth": 4,
 }
@@ -43,12 +46,7 @@ html_theme_options = {
 html_last_updated_fmt = "%B %d, %Y"
 
 templates_path = ["docs/_templates"]
-html_last_updated_fmt = "%B %d, %Y"
-
-from datetime import datetime
 
 html_context = {
     "turtini_year": datetime.utcnow().year,
 }
-
-html_favicon = "_static/favicon.ico"
