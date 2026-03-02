@@ -172,3 +172,13 @@ html, body, .wy-body-for-nav {
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
 }
+
+.wy-body-for-nav p {
+  line-height: 1.6;
+  margin-bottom: 0.9em;
+}
+
+.wy-nav-content {
+  max-width: 920px;
+}
+
