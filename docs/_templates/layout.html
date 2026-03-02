@@ -1,19 +1,33 @@
 {% extends "!layout.html" %}
 
+{# -------------------------------------------------- #}
+{# Top Banner (Ansible-style notice block)           #}
+{# -------------------------------------------------- #}
+
+{% block content %}
+
+  <div class="turtini-banner" role="note" aria-label="Documentation notice">
+    <strong>Notice:</strong>
+    This is Turtini’s official plain-language documentation for federal and regulated environments.
+    Changes are reviewed and version-controlled. If you spot an issue, open a GitHub Issue or PR.
+  </div>
+
+  {{ super() }}
+
+{% endblock %}
+
+
+{# -------------------------------------------------- #}
+{# Footer Override                                   #}
+{# -------------------------------------------------- #}
+
 {% block footer %}
   {{ super() }}
 
-  <div style="
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 14px 18px 24px;
-    border-top: 1px solid #dbe3f5;
-    font-size: 0.85rem;
-    color: #4b5563;
-    line-height: 1.6;
-  ">
+  <div class="turtini-footer">
     © {{ turtini_year }} Turtini LLC<br>
     Official federal plain-language documentation<br>
-    Last updated: {{ last_updated }}
+    <span class="last-updated">Last updated: {{ last_updated }}</span>
   </div>
+
 {% endblock %}
