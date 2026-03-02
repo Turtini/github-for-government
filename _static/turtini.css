@@ -135,7 +135,7 @@ h3, h4, h5, h6 {
 /* === Global Font Override === */
 
 html, body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+  font-family: "Segoe UI", Arial, sans-serif !important;
 }
 
 /* Headings */
