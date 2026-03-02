@@ -50,3 +50,5 @@ from datetime import datetime
 html_context = {
     "turtini_year": datetime.utcnow().year,
 }
+
+html_favicon = "_static/favicon.ico"
