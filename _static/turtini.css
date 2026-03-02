@@ -2,9 +2,9 @@
 
 /* --- Brand knobs (change these 3 values) --- */
 :root{
-  --turtini-brand: #0B5FFF;      /* primary */
+  --turtini-brand: #2a53cd;      /* primary */
   --turtini-brand-dark: #073B9A; /* hover/darker */
-  --turtini-accent: #19C37D;     /* accent */
+  --turtini-accent: #1dd29f;     /* accent */
 }
 
 /* Left sidebar background + link accent (RTD theme) */
