@@ -1,5 +1,10 @@
 {% extends "!layout.html" %}
 
+{% block extrahead %}
+  {{ super() }}
+  <link rel="icon" type="image/x-icon" href="{{ pathto('_static/favicon.ico', 1) }}">
+{% endblock %}
+
 {# ============================
    Top global header (full-width, sticky)
    ============================ #}
