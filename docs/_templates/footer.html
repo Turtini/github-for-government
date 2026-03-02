@@ -1,0 +1,8 @@
+{% extends "!footer.html" %}
+
+{% block extrafooter %}
+  <div style="margin-top: 20px; padding-top: 12px; border-top: 1px solid #e6e6e6; font-size: 0.85rem; color: #6b7280;">
+    © {{ now().year }} Turtini LLC · Official Documentation Surface<br>
+    Last updated: {{ last_updated }}
+  </div>
+{% endblock %}
