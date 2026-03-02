@@ -42,5 +42,5 @@ html_theme_options = {
 # Show last updated date
 html_last_updated_fmt = "%B %d, %Y"
 
-templates_path = ["_templates"]
+templates_path = ["docs/_templates"]
 html_last_updated_fmt = "%B %d, %Y"
