@@ -3,7 +3,7 @@
 /* --- Brand knobs (change these 3 values) --- */
 :root{
   --turtini-brand: #2a53cd;      /* primary */
-  --turtini-brand-light: #99d8e9; /* hover/darker */
+  --turtini-brand-dark: #2a53cd; /* hover/darker */
   --turtini-accent: #1dd29f;     /* accent */
 }
 
