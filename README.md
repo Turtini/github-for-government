@@ -131,3 +131,15 @@ This repository is intentionally evolving.
 
 Content will be added incrementally as common questions arise and usage patterns become clearer.
 
+## Documentation
+
+```{toctree}
+:maxdepth: 2
+
+common-questions
+common-terms
+compliance-terms
+internal-controls
+participating-safely
+command-line-optional
+```
