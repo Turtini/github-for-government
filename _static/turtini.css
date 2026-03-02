@@ -1,0 +1,59 @@
+/* _static/turtini.css */
+
+/* --- Brand knobs (change these 3 values) --- */
+:root{
+  --turtini-brand: #0B5FFF;      /* primary */
+  --turtini-brand-dark: #073B9A; /* hover/darker */
+  --turtini-accent: #19C37D;     /* accent */
+}
+
+/* Left sidebar background + link accent (RTD theme) */
+.wy-side-scroll,
+.wy-nav-side {
+  background: var(--turtini-brand-dark);
+}
+
+.wy-menu-vertical a:hover,
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.on a {
+  background: rgba(255,255,255,0.08);
+}
+
+/* Top nav bar (mobile) */
+.wy-nav-top {
+  background: var(--turtini-brand-dark);
+}
+
+/* Links */
+a {
+  color: var(--turtini-brand);
+}
+a:hover {
+  color: var(--turtini-brand-dark);
+}
+
+/* Optional: make the content area feel a bit cleaner */
+.wy-nav-content {
+  max-width: 1200px;
+}
+
+/* --- Top banner --- */
+.turtini-banner {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--turtini-brand);
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 1.2;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.turtini-banner a {
+  color: #fff;
+  text-decoration: underline;
+}
+.turtini-banner a:hover {
+  color: rgba(255,255,255,0.9);
+}
