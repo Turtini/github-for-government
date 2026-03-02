@@ -1,16 +1,60 @@
-/* _static/turtini.css */
+/* _static/turtini.css
+   Turtini docs theme overrides (Sphinx RTD theme)
+*/
 
-/* --- Brand knobs (change these 3 values) --- */
+/* --- Brand knobs --- */
 :root{
-  --turtini-brand: #2a53cd;      /* primary */
-  --turtini-brand-dark: #2a53cd; /* hover/darker */
-  --turtini-accent: #1dd29f;     /* accent */
+  --turtini-brand: #2a53cd;       /* primary */
+  --turtini-brand-dark: #2a53cd;  /* hover/darker */
+  --turtini-accent: #1dd29f;      /* accent */
+  --turtini-hover: #99d8e9;       /* hover/link accent */
+  --turtini-border: #dbe3f5;      /* soft border */
+  --turtini-text-muted: #4b5563;  /* footer text */
+  --turtini-text-muted-2: #6b7280;
 }
 
-/* Left sidebar background + link accent (RTD theme) */
+/* =========================
+   Global Font Override (Arial-like)
+   ========================= */
+html, body, .wy-body-for-nav, .wy-nav-side, .wy-breadcrumbs {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+  font-weight: 600;
+}
+
+.wy-body-for-nav p {
+  line-height: 1.6;
+  margin-bottom: 0.9em;
+}
+
+/* =========================
+   Left Sidebar + Search Header
+   ========================= */
+
+/* Left sidebar background */
 .wy-side-scroll,
 .wy-nav-side {
-  background: #2a53cd;
+  background: var(--turtini-brand);
+}
+
+/* Logo + search header area */
+.wy-side-nav-search {
+  background: var(--turtini-brand) !important;
+  background-image: none !important; /* remove subtle overlay */
+}
+
+/* Sidebar links */
+.wy-menu-vertical a {
+  color: #ffffff;
+}
+
+.wy-menu-vertical a:hover {
+  background-color: rgba(255,255,255,0.12);
+  color: var(--turtini-hover);
+  font-weight: 500;
 }
 
 .wy-menu-vertical a:hover,
@@ -21,31 +65,91 @@
 
 /* Top nav bar (mobile) */
 .wy-nav-top {
-  background: var(--turtini-brand-dark);
+  background: var(--turtini-brand-dark) !important;
 }
 
-.wy-side-scroll {
-  background: #2a53cd;
-}
-
-/* Primary links */
+/* =========================
+   Links
+   ========================= */
 a {
-  color: #2a53cd;
+  color: var(--turtini-brand);
   transition: color 0.15s ease-in-out;
 }
 
-/* Hover state */
 a:hover {
-  color: #99d8e9;
+  color: var(--turtini-hover);
 }
 
-/* Optional: make the content area feel a bit cleaner */
+/* =========================
+   Content width
+   ========================= */
+
+/* You previously had 1200px, then later changed to 920px.
+   Keeping 920px (cleaner reading). If you want wider, change to 1200px. */
 .wy-nav-content {
-  max-width: 1200px;
+  max-width: 920px;
 }
 
-/* --- Top banner --- */
+/* =========================
+   Headings
+   ========================= */
+h1 {
+  color: var(--turtini-brand);
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--turtini-brand);
+  font-weight: 600;
+  border-bottom: 2px solid var(--turtini-hover);
+  padding-bottom: 4px;
+}
+
+h3, h4, h5, h6 {
+  color: #1f3ea8; /* slightly darker for hierarchy */
+}
+
+/* =========================
+   Breadcrumbs
+   ========================= */
+.wy-breadcrumbs {
+  font-size: 13px;
+  border-bottom: 1px solid rgba(42,83,205,0.15);
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+}
+
+.wy-breadcrumbs a {
+  color: var(--turtini-brand);
+}
+
+.wy-breadcrumbs a:hover {
+  color: var(--turtini-hover);
+}
+
+.wy-breadcrumbs li {
+  color: #555;
+}
+
+/* =========================
+   Banner / Notice (Ansible-style callout box)
+   Used for the “Notice: …” box near top of pages
+   ========================= */
 .turtini-banner {
+  margin: 14px 0 20px 0;
+  padding: 14px 16px;
+  border: 1px solid var(--turtini-border);
+  border-left: 6px solid var(--turtini-hover);
+  background: #f7fbff;
+  color: #1f2937;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* If you ever want a sticky “banner bar” (different from notice box),
+   use this class on that element instead of .turtini-banner */
+.turtini-banner--sticky {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -57,174 +161,28 @@ a:hover {
   border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
-.turtini-banner a {
+.turtini-banner--sticky a {
   color: #fff;
   text-decoration: underline;
 }
-.turtini-banner a:hover {
+
+.turtini-banner--sticky a:hover {
   color: rgba(255,255,255,0.9);
 }
 
-.wy-menu-vertical a {
-  color: #ffffff;
-}
-
-.wy-menu-vertical a:hover {
-  background-color: rgba(255,255,255,0.12);
-  color: #99d8e9;
-  font-weight: 500;
-}
-
-/* --- Headings --- */
-
-h1 {
-  color: #2a53cd;
-  font-weight: 700;
-}
-
-h2 {
-  color: #2a53cd;
-  font-weight: 600;
-  border-bottom: 2px solid #99d8e9;
-  padding-bottom: 4px;
-}
-
-h3, h4, h5, h6 {
-  color: #1f3ea8; /* slightly darker for hierarchy */
-}
-
-/* --- Breadcrumbs --- */
-
-.wy-breadcrumbs {
-  font-size: 13px;
-}
-
-.wy-breadcrumbs a {
-  color: #2a53cd;
-}
-
-.wy-breadcrumbs a:hover {
-  color: #99d8e9;
-}
-
-.wy-breadcrumbs li {
-  color: #555;
-}
-
-.wy-breadcrumbs {
-  border-bottom: 1px solid rgba(42,83,205,0.15);
-  padding-bottom: 6px;
-  margin-bottom: 18px;
-}
-
-/* Top mobile nav bar */
-.wy-nav-top {
-  background: #2a53cd !important;
-}
-
-/* Logo + search header area */
-.wy-side-nav-search {
-  background: #2a53cd !important;
-}
-
-/* Remove subtle gradient overlay */
-.wy-side-nav-search {
-  background-image: none !important;
-}
-
-/* === Global Font Override === */
-
-html, body {
-  font-family: "Segoe UI", Arial, sans-serif !important;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-  font-weight: 600;
-}
-
-/* Sidebar */
-.wy-nav-side {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-}
-
-/* Breadcrumbs */
-.wy-breadcrumbs {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-}
-
-/* Footer polish */
-.turtini-footer {
-  margin-top: 28px;
-  padding-top: 18px;
-}
-
-.turtini-footer .last-updated {
-  color: #6b7280;
-}
-
-/* Fonts (more Arial-like) */
-html, body, .wy-body-for-nav {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-}
-
-.wy-body-for-nav p {
-  line-height: 1.6;
-  margin-bottom: 0.9em;
-}
-
-.wy-nav-content {
-  max-width: 920px;
-}
-
 /* =========================
-   Top Banner (Ansible-style)
+   Global Top Header (Ansible-like black bar)
    ========================= */
-
-.turtini-banner {
-  margin: 14px 0 20px 0;
-  padding: 14px 16px;
-  border: 1px solid #dbe3f5;
-  border-left: 6px solid #99d8e9;
-  background: #f7fbff;
-  color: #1f2937;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-/* =========================
-   Footer Styling
-   ========================= */
-
-.turtini-footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 14px 18px 24px;
-  border-top: 1px solid #dbe3f5;
-  font-size: 0.85rem;
-  color: #4b5563;
-  line-height: 1.6;
-}
-
-.turtini-footer .last-updated {
-  color: #6b7280;
-}
-
-/* =========================
-   Global Top Header
-   ========================= */
-
 .turtini-global-header {
   background: #000;
   color: #fff;
   width: 100%;
   font-size: 0.9rem;
+  /* If you want it always visible while scrolling, uncomment:
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  */
 }
 
 .turtini-header-inner {
@@ -253,35 +211,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =========================
-   Banner
+   Footer Styling (custom footer block in layout.html)
    ========================= */
-
-.turtini-banner {
-  margin: 14px 0 20px 0;
-  padding: 14px 16px;
-  border: 1px solid #dbe3f5;
-  border-left: 6px solid #99d8e9;
-  background: #f7fbff;
-  color: #1f2937;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-/* =========================
-   Footer
-   ========================= */
-
 .turtini-footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 14px 18px 24px;
-  border-top: 1px solid #dbe3f5;
+  border-top: 1px solid var(--turtini-border);
   font-size: 0.85rem;
-  color: #4b5563;
+  color: var(--turtini-text-muted);
   line-height: 1.6;
 }
 
 .turtini-footer .last-updated {
-  color: #6b7280;
+  color: var(--turtini-text-muted-2);
+}
+
+/* Optional spacing polish if you wrap footer inside .turtini-footer */
+.turtini-footer {
+  margin-top: 28px;
+  padding-top: 18px;
 }
