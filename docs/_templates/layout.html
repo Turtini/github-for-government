@@ -1,60 +1,33 @@
 {% extends "!layout.html" %}
 
-{# -------------------------------------------------- #}
-{# Top Global Header (Ansible-style black bar)       #}
-{# -------------------------------------------------- #}
-
-{% block extrahead %}
+{# --- Top global header (full-width, always visible) --- #}
+{% block extrabody %}
   {{ super() }}
-{% endblock %}
 
-{% block body %}
-
-  <!-- Top Turtini Global Header -->
   <div class="turtini-global-header">
     <div class="turtini-header-inner">
       <div class="turtini-header-left">
-        <a href="https://turtini.com/" target="_blank" rel="noopener">
-          Turtini
-        </a>
+        <a href="https://turtini.com/" target="_blank" rel="noopener">Turtini</a>
       </div>
 
       <div class="turtini-header-right">
-        <a href="https://turtini.com/events" target="_blank" rel="noopener">
-          Events
-        </a>
-        <a href="https://trident.turtini.com/login" target="_blank" rel="noopener">
-          Trident
-        </a>
+        <a href="https://turtini.com/events" target="_blank" rel="noopener">Events</a>
+        <a href="https://trident.turtini.com/login" target="_blank" rel="noopener">Trident</a>
       </div>
     </div>
   </div>
-
-  {{ super() }}
-
 {% endblock %}
 
-
-{# -------------------------------------------------- #}
-{# Banner under breadcrumbs                          #}
-{# -------------------------------------------------- #}
-
+{# --- Banner inside the content area (under breadcrumbs) --- #}
 {% block content %}
-
   <div class="turtini-banner" role="note" aria-label="Documentation notice">
-    <strong>Notice:</strong>
-    This is Turtini’s official plain-language documentation for federal and regulated environments.
+    <strong>Notice:</strong> This is Turtini’s official plain-language documentation for federal and regulated environments.
   </div>
 
   {{ super() }}
-
 {% endblock %}
 
-
-{# -------------------------------------------------- #}
-{# Footer Override                                   #}
-{# -------------------------------------------------- #}
-
+{# --- Footer --- #}
 {% block footer %}
   {{ super() }}
 
@@ -63,5 +36,4 @@
     Official federal plain-language documentation<br>
     <span class="last-updated">Last updated: {{ last_updated }}</span>
   </div>
-
 {% endblock %}
