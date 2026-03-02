@@ -50,13 +50,3 @@ from datetime import datetime
 html_context = {
     "turtini_year": datetime.utcnow().year,
 }
-
-/* Footer polish */
-.turtini-footer {
-  margin-top: 28px;
-  padding-top: 18px;
-}
-
-.turtini-footer .last-updated {
-  color: #6b7280;
-}
