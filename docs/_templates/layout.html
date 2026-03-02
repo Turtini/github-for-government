@@ -1,7 +1,42 @@
 {% extends "!layout.html" %}
 
 {# -------------------------------------------------- #}
-{# Top Banner (Ansible-style notice block)           #}
+{# Top Global Header (Ansible-style black bar)       #}
+{# -------------------------------------------------- #}
+
+{% block extrahead %}
+  {{ super() }}
+{% endblock %}
+
+{% block body %}
+
+  <!-- Top Turtini Global Header -->
+  <div class="turtini-global-header">
+    <div class="turtini-header-inner">
+      <div class="turtini-header-left">
+        <a href="https://turtini.com/" target="_blank" rel="noopener">
+          Turtini
+        </a>
+      </div>
+
+      <div class="turtini-header-right">
+        <a href="https://turtini.com/events" target="_blank" rel="noopener">
+          Events
+        </a>
+        <a href="https://trident.turtini.com/login" target="_blank" rel="noopener">
+          Trident
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {{ super() }}
+
+{% endblock %}
+
+
+{# -------------------------------------------------- #}
+{# Banner under breadcrumbs                          #}
 {# -------------------------------------------------- #}
 
 {% block content %}
@@ -9,7 +44,6 @@
   <div class="turtini-banner" role="note" aria-label="Documentation notice">
     <strong>Notice:</strong>
     This is Turtini’s official plain-language documentation for federal and regulated environments.
-    Changes are reviewed and version-controlled. If you spot an issue, open a GitHub Issue or PR.
   </div>
 
   {{ super() }}
