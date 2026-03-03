@@ -1,4 +1,4 @@
-# GitHub for Government (Turtini)
+# GitHub for Government
 
 Welcome! This site publishes the repository documentation in an easy-to-share format.
 
