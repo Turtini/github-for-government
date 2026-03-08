@@ -51,7 +51,7 @@ templates_path = [_paths["templates"]]
 # Keep local static assets + shared theme static assets
 html_static_path = ["_static", _paths["static"]]
 
-html_logo = "turtini-logo-white.png"
+html_logo = "_static/turtini-logo-white.png"
 html_favicon = "_static/favicon.ico"
 
 html_css_files = ["turtini.css"]
